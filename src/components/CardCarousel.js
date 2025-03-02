@@ -19,7 +19,7 @@ export default function CardCarousel() {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen w-screen bg-white overflow-hidden">
+        <div className="flex justify-center items-center min-h-screen w-full bg-white px-10">
             <div className="relative w-[1500px] h-[500px] bg-black rounded-2xl shadow-lg p-6 overflow-hidden">
                 {/* Heading & Arrow Buttons */}
                 <div className="flex justify-between items-center mb-8">
