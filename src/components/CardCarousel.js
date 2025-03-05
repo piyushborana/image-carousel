@@ -77,7 +77,7 @@ export default function CardCarousel() {
     return (
             <div className="flex flex-col items-center justify-center w-full bg-white">
                 {/* Heading & Arrows */}
-                <div className="w-full px-10 py-6 flex justify-stretch items-center text-black z-10">
+                <div className="w-full px-10 py-6 flex justify-between items-center text-black z-10">
                     <h2 className="text-4xl font-bold">Image Generation Models</h2>
 
                     {/* Arrow Buttons */}
@@ -92,7 +92,7 @@ export default function CardCarousel() {
                 </div>
 
             {/* Scrollable Section */}
-            <div className="w-screen h-full flex items-center justify-center overflow-hidden">
+            <div className="w-screen h-full flex items-center overflow-hidden">
                 <div ref={scrollRef} className="flex space-x-8 px-10 py-24 overflow-x-auto scrollbar-hide">
                     {templates.map(({ id, title, customTitle, image, genTime, genText, features, bgColor, btnColor, textColor }) => (
                         <motion.div
